@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->Truncar_Tablas(['professions']);
+        $this->Truncar_Tablas(['professions','users']);
         //este metodo se ejecuta al colocar en la  consola
         //php artisan DB:seed 
          $this->call(ProfessionSeeder::class);
