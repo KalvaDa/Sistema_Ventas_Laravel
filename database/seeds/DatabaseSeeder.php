@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         //este metodo se ejecuta al colocar en la  consola
         //php artisan DB:seed 
          $this->call(ProfessionSeeder::class);
+         $this->call(UserSeeder::class);
          //-------------------  PARA LLAMAR A VARIAS CLASES SE PUEDE USAR COMO SIGUE A CONTINUACION
         //  $this->call([
         //     UsersTableSeeder::class,

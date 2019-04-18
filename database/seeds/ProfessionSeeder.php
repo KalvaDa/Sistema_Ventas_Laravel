@@ -12,7 +12,7 @@ class ProfessionSeeder extends Seeder
      */
     public function run()
     {
-        
+
     DB::table('professions')->insert(
           ['title'=>'Desarrollador Movil']
       );
@@ -20,6 +20,6 @@ class ProfessionSeeder extends Seeder
       DB::table('professions')->insert(
           ['title'=>'Desarrollador Web']
       );
-
+      DB::insert('insert into professions (title) values (?)', ['Arquitecto']);
     }
 }
